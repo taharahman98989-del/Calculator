@@ -3,92 +3,49 @@
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>css card</title>
-        <style>
-                .card-container{
-                        box-sizing: border-box;
-                        display: flex;
-                        background-color: cadetblue;
-                        padding: 20px 0 0;
-                        justify-content: center;
-                        align-items: center;
-                        flex-wrap: wrap;
-                        
-
-                }
-                .card{
-                        width: 300px;
-                        margin: 10px;
-                        box-sizing: border-box;
-                        box-shadow: 1px 5px 4px black;
-
-                }
-                .image-style1{
-                        width: 100% ;
-                        
-                }
-                
-               
-                .card-body{
-                        background-color: darkorchid;
-
-                }
-                .card-body .card-title{
-                        font-size: 2rem;
-                        text-align: center;
-                        color: white;
-
-                }
-               .card-body .card-des{
-                
-                text-align:justify;
-                line-height: 1.03;
-                color: white;
-                }
-                .card:hover{
-                      box-shadow: 6px 12px 10px white;
-                      
-                }
-               
-                
-        </style>
+        <title>card</title>
+        <link rel="stylesheet" href="03style.css">
 </head>
 <body>
-        <div class="card-container">
-
-
-                <div class="card">
-
-        <img class="image-style1" src="https://cdn.pixabay.com/photo/2015/09/09/19/56/office-932926_640.jpg" alt="">
-
-        <div class="card-body">
-                <div class="card-title">
-                        Python Programming
+      <h1>Calculator</h1>
+      <div class="card">
+                <div class="calc-head">
+                        <input type="text" id="result" maxlength="10">
                 </div>
-                <div class="card-des">
-                        <p>Dolore rebum et aliquyam sit ea et vero ipsum, ea aliquyam consetetur tempor at dolore est, nonumy ea rebum ea sanctus diam ut. Elitr dolor aliquyam et gubergren ut eos takimata tempor. Lorem dolor sadipscing sadipscing ipsum amet, sadipscing nonumy eirmod sed justo, et diam est ipsum sit consetetur sed.</p>
+                <div class="calc-body">
+                        <div>
+                                <input type="button" class="btn" value="c">
+                                <input type="button" class="btn" value="+/-">
+                                <input type="button" class="btn" value="%">
+                                <input type="button" class="btn btn-style" value="/">
+                        </div>
+                        <div>
+                                <input type="button" class="btn" value="7">
+                                <input type="button" class="btn" value="8">
+                                <input type="button" class="btn" value="9">
+                                <input type="button" class="btn btn-style" value="×">
+                        </div>
+                        <div>
+                                <input type="button" class="btn" value="4">
+                                <input type="button" class="btn" value="5">
+                                <input type="button" class="btn" value="6">
+                                <input type="button" class="btn btn-style" value="-">
+                        </div>
+                        <div>
+                                <input type="button" class="btn" value="1">
+                                <input type="button" class="btn" value="2">
+                                <input type="button" class="btn" value="3">
+                                <input type="button" class="btn btn-style" value="+">
+                        </div>
+                        <div>
+                                <input type="button" class="btn" value="0">
+                                <input type="button" class="btn" value=".">
+                                <input type="button" class="btn" value="DEL">
+                                <input type="button" class="btn" style="background-color: orange;" value="=">
+                        </div>
+
                 </div>
-        </div>
-      </div>
 
-
- <div class="card">
-
-        <img class="image-style1" src="https://cdn.pixabay.com/photo/2015/09/09/19/56/office-932926_640.jpg" alt="">
-
-        <div class="card-body">
-                <div class="card-title">
-                        Python Programming
-                </div>
-                <div class="card-des">
-                        <p>Dolore rebum et aliquyam sit ea et vero ipsum, ea aliquyam consetetur tempor at dolore est, nonumy ea rebum ea sanctus diam ut. Elitr dolor aliquyam et gubergren ut eos takimata tempor. Lorem dolor sadipscing sadipscing ipsum amet, sadipscing nonumy eirmod sed justo, et diam est ipsum sit consetetur sed.</p>
-                </div>
-      
-
-        
-
-        </div>
-      
-  
+      </div>  
 </body>
 </html>
